@@ -97,7 +97,7 @@ fi
 # 解析数据
 if [ -n "$weather_json" ]; then
 
-	#判断响应是否正确
+	# 判断响应是否正确
 	error_status=`echo $weather_json | jsonfilter -e '@.status'`
 	error_msg=${api_error_map[`echo $weather_json | jsonfilter -e '@.status_code'`]}
 	if [ -n "$error_msg" ]; then
