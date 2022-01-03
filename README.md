@@ -7,7 +7,7 @@
 
 ## 简介
 
-相比于其他脚本，改进并支持了以下特性：
+重构自带脚本，改进并新增了以下特性：
 
 - 支持显示错误信息，方便定位
 - LuCI配置更新后立即刷新
@@ -24,10 +24,10 @@
 
 ## 安装
 
-上传并替换到以下路径：
+ssh登录路由器，执行以下命令：
 
 ```shell
-/lib/k3screenctrl/weather.sh
+wget https://raw.githubusercontent.com/VMatrices/phicomn-k3-weather/main/weather.sh -O /lib/k3screenctrl/weather.sh
 ```
 
 
